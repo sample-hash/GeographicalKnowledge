@@ -1,0 +1,92 @@
+{
+    "use": [
+            {
+               "question": "Stolicą Ukrainy jest:",
+               "answers": [
+                   {"answer" : "Lwów", "status" : false},
+                   {"answer" : "Kijów", "status" : true},
+                   {"answer" : "Cherson", "status" : false}
+               ]
+            },
+            {
+                "question": "Stolicą Niemiec jest:",
+                "answers": [
+                    {"answer" : "Hamburg", "status" : false},
+                    {"answer" : "Frankfurt", "status" : false},
+                    {"answer" : "Berlin", "status" : true}
+                ]
+            },          
+            {
+                "question": "Stolicą Rosji jest:",
+                "answers": [
+                    {"answer" : "Moskwa", "status" : true},
+                    {"answer" : "Smoleńsk", "status" : false},
+                    {"answer" : "Tula", "status" : false}
+                ]
+            },
+            {
+                "question": "Stolicą Włoch jest:",
+                "answers": [
+                    {"answer" : "Rzym", "status" : true},
+                    {"answer" : "Neapol", "status" : false},
+                    {"answer" : "Turyn", "status" : false}
+                ]
+            },
+            {
+                "question": "Stolicą Hiszpanii jest:",
+                "answers": [
+                    {"answer" : "Madryt", "status" : true},
+                    {"answer" : "Barcelona", "status" : false},
+                    {"answer" : "Walencja", "status" : false}
+                ]
+            },
+            {
+                "question": "Stolicą Białorusi jest:",
+                "answers": [
+                    {"answer" : "Mińsk", "status" : true},
+                    {"answer" : "Witebsk", "status" : false},
+                    {"answer" : "Homel", "status" : false}
+                ]
+            },
+            {
+                "question": "Stolicą Francji jest:",
+                "answers": [
+                    {"answer" : "Paryż", "status" : true},
+                    {"answer" : "Marsylia", "status" : false},
+                    {"answer" : "Lyon", "status" : false}
+                ]
+            },
+            {
+                "question": "Stolicą Portugalii jest:",
+                "answers": [
+                    {"answer" : "Lizbona", "status" : true},
+                    {"answer" : "Braga", "status" : false},
+                    {"answer" : "Almada", "status" : false}
+                ]
+            },
+            {
+                "question": "Stolicą Szwecji jest:",
+                "answers": [
+                    {"answer" : "Sztokholm", "status" : true},
+                    {"answer" : "Goteborg", "status" : false},
+                    {"answer" : "Malmo", "status" : false}
+                ]
+            },
+            {
+                "question": "Stolicą Austrii jest:",
+                "answers": [
+                    {"answer" : "Wiedeń", "status" : true},
+                    {"answer" : "Graz", "status" : false},
+                    {"answer" : "Salzburg", "status" : false}
+                ]
+            },
+            {
+                "question": "Stolicą Angoli jest:",
+                "answers": [
+                    {"answer" : "Luanda", "status" : true},
+                    {"answer" : "Huambo", "status" : false},
+                    {"answer" : "Lobito", "status" : false}
+                ]
+            }
+         ] 
+}
