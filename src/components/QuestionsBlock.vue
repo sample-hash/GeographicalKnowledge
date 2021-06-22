@@ -13,7 +13,7 @@
       <li v-for="answer in question.answers" :key="answer.answer">
         <div class="answer-block">
           <label>
-            <input type="radio" :value="answer" v-model="odpowiedz[questionIndex]">
+            <input type="radio" :value="answer" v-model="answer[questionIndex]">
             {{answer.answer}}
           </label>
         </div>
@@ -25,7 +25,7 @@
       <button @click="showResult" v-show="checkLast">Zakończ i zobacz wynik</button>
     </div>
   </div>
-  <div v-else-if="wynik">
+  <div v-else-if="result">
     <h3>Poprawnych odpowiedzi: {{countCorrectAnswer}}/{{questionCount}}</h3>
   </div>
 </template>
@@ -37,11 +37,11 @@ export default {
     return {
       datas: [],
       questionIndex: 0,
-      odpowiedz: [],
+      answer: [],
       questionCount: 0,
       countCorrectAnswer: 0,
-      starter: true,
-      wynik: false,
+      starter: true, 
+      result: false,
     };
   },
   computed: {
@@ -76,15 +76,15 @@ export default {
       this.questionIndex--;
     },
     showResult: function() {
-      for (var index = 0; index < this.odpowiedz.length; index++) {
+      for (var index = 0; index < this.answer.length; index++) {
         if (
-          !(this.odpowiedz[index] == null) &&
-          this.odpowiedz[index].status === true
+          !(this.answer[index] == null) &&
+          this.answer[index].status === true
         ) {
           this.countCorrectAnswer++;
         }
       }
-      this.wynik = true;
+      this.result = true;
       this.next();
     },
     mixArray: function () {
