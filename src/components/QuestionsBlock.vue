@@ -40,7 +40,7 @@ export default {
       answer: [],
       questionCount: 0,
       countCorrectAnswer: 0,
-      starter: true,
+      starter: true, 
       result: false,
     };
   },
