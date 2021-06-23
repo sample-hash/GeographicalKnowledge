@@ -87,19 +87,23 @@ export default {
       this.result = true;
       this.next();
     },
-    mixArray: function () {
-      this.datas.sort(function (el) {
-        el.answers.sort(function () {
-          return Math.random() - 0.5;
-        });
-        return Math.random() - 0.5;
-      });
+    mixArray: function (arr) {
+      let lngth = arr.length, randomPosition, tmpEl; 
+
+      while(lngth){
+        randomPosition = Math.floor(Math.random() * lngth--);
+
+        tmpEl = arr[lngth];
+        arr[lngth] = arr[randomPosition];
+        arr[randomPosition] = tmpEl;
+      }
+
     },
   },
   mounted() {
     axios.get('data.json').then((response) => {
       this.datas = response.data.use;
-      this.mixArray();
+      this.mixArray(this.datas);
     });
   },
 };
